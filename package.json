@@ -1,0 +1,26 @@
+{
+  "name": "whatamiwriting",
+  "version": "1.0.0",
+  "description": "An app that will guess what number users have drawn",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorboDiei/whatamiwriting.git"
+  },
+  "author": "David Corbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorboDiei/whatamiwriting/issues"
+  },
+  "homepage": "https://github.com/CorboDiei/whatamiwriting#readme"
+}

@@ -1,3 +1,20 @@
+const dim = 14;
+
+for (var i = 0; i < dim; i++) {
+  var rowInner = '<div class="row row-boxes" id="row-' + i + '"></div>';
+  $(".draw-box").append(rowInner);
+  for (var j = 0; j < dim; j++) {
+    var targetRow = "#row-" + i;
+    var addBox =
+      '<div class="click-box unclicked-box col-sm-6" id="box-' +
+      i +
+      "-" +
+      j +
+      '"></div>';
+    $(targetRow).append(addBox);
+  }
+}
+
 var boxes = $(".click-box");
 var body = $("body");
 

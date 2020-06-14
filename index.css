@@ -1,51 +1,96 @@
 /* ELEMENT SELECTORS */
 body {
-    background-color: "white";
+  background-color: "white";
+  font-family: "Open Sans", sans-serif;
 }
 /* CLASS SELECTORS */
+.welcome-box {
+  margin: 50px auto 25px auto;
+  max-width: 424px;
+  text-align: center;
+}
+.welcome-text {
+  margin: 0 0 0 0;
+  font-size: 24px;
+}
+.options {
+  padding: 0 0 0 0;
+  margin: 25px auto 0 auto;
+  max-width: 200px;
+}
+.o-buttons {
+  padding: 0 0px 0 0px;
+}
+.b1 {
+  margin: 0 0px 0 0px;
+}
+.clear {
+  float: right;
+}
+.response {
+  margin: 25px 0 0 0px;
+  display: block;
+  height: auto;
+}
+.response-text-box {
+  margin: 7px 0 0 0;
+  display: block;
+  float: left;
+  max-width: 115px;
+}
+.response-text {
+  font-size: 20px;
+}
+.guess-box {
+  display: block;
+  float: right;
+  margin: 0 0 0 5px;
+  padding: 5px 5px 5px 5px;
+  max-width: 45px;
+  max-height: 45px;
+  width: 45px;
+  height: 45px;
+  border: black solid 2px;
+  text-align: center;
+}
+.guess-text {
+  font-size: 20px;
+}
 .box-container {
-    margin: 50px auto 0 auto;
-    padding: 0 0 0 0;
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
 }
-
-.four-boxes {
-    margin: 0 auto 0 auto;
-    padding: 0 0 0 0;
-    max-width: 400px;
-    border: grey solid 2px;
+.draw-box {
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  max-width: 424px;
+  max-height: 424px;
+  border: grey solid 2px;
 }
-.two-boxes {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    max-width: 400px;
+.row-boxes {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  max-width: 420px;
+  max-height: 30px;
+  height: 30px;
+  border: none;
 }
 .click-box {
-    max-width: 200px;
-    height: 200px;
-    padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  max-width: 30px;
+  height: 30px;
+  max-height: 30px;
+  padding: 0 0 0 0;
+  border: none;
 }
 .unclicked-box {
-    background-color: white;
+  background-color: white;
 }
 .unclicked-box:hover {
-    background-color: grey;
+  background-color: grey;
 }
 .clicked-box {
-    background-color: black;
+  background-color: black;
 }
 /* ID SELECTORS */
-#box-1 {
-
-}
-
-#box-2 {
-
-}
-
-#box-3 {
-
-}
-
-#box-4 {
-
-}
