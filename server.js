@@ -20,7 +20,15 @@ app.post("/compute", (req, res) => {
   var data = req.body.mat;
   const value = runScript(data);
   value.stdout.on("data", (data) => {
+    console.log(data.toString());
     res.send(data.toString());
+  });
+  value.stderr.on("data", (data) => {
+    console.log("err: " + data);
+  });
+  value.on("close", (code) => {
+    console.log("Subprocess ended with code " + code);
+    value.stdin.end();
   });
 });
 
@@ -30,7 +38,6 @@ app.listen(3000, () => {
 
 function runScript(data) {
   return spawn("python", [
-    "-u",
     path.join(__dirname, "scripts/guess.py"),
     "--data",
     data,
