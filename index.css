@@ -65,7 +65,12 @@ body {
   padding: 0 0 0 0;
   max-width: 424px;
   max-height: 424px;
+}
+.draw-box-ok {
   border: grey solid 2px;
+}
+.draw-box-err {
+  border: red solid 2px;
 }
 .row-boxes {
   margin: 0 0 0 0;

@@ -53,5 +53,6 @@ function clickOperator(obj) {
       obj.classList.remove("clicked-box");
       obj.classList.add("unclicked-box");
     }
+    $(".guess-text strong").text("");
   }
 }
