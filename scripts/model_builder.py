@@ -26,21 +26,21 @@ validation_dataset = datasets.MNIST(root='.\data', train=False, download=True, t
 training_loader = torch.utils.data.DataLoader(dataset=training_dataset, batch_size=100, shuffle=True)
 validation_loader = torch.utils.data.DataLoader(validation_dataset, batch_size=100, shuffle=False)
 
-def im_convert(tensor):
-    image = tensor.cpu().clone().detach().numpy()
-    image = image.transpose(1, 2, 0)
-    image = image * np.array((0.5, 0.5, 0.5)) + np.array((0.5, 0.5, 0.5))
-    image = image.clip(0, 1)
-    return image
+# def im_convert(tensor):
+#     image = tensor.cpu().clone().detach().numpy()
+#     image = image.transpose(1, 2, 0)
+#     image = image * .5 + .5
+#     image = image.clip(0, 1)
+#     return image
 
 data_iter = iter(training_loader)
 images, labels = data_iter.next()
 fig = plt.figure(figsize=(25, 4))
 
-for i in np.arange(20):
-    ax = fig.add_subplot(2, 10, i + 1, xticks=[], yticks=[])
-    plt.imshow(im_convert(images[i]))
-    ax.set_title([labels[i].item()])
+# for i in np.arange(20):
+#     ax = fig.add_subplot(2, 10, i + 1, xticks=[], yticks=[])
+#     plt.imshow(im_convert(images[i]))
+#     ax.set_title([labels[i].item()])
     
 
 class LeNet(nn.Module):

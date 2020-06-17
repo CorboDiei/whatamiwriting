@@ -35,7 +35,17 @@
                 </div>
             </div>
         </div>
-        
+        <div class="about-box">
+            <h2>About</h2>
+            <p class="about-text">This is a simple demonstration of a convolutional neural network trained on the MNIST dataset to recognize single digits. The following graphic is a representation of the neural net used for classification.</p>
+            <img src="cnn.png" class="img-specs" alt="convolutional-neural-net-architecture">
+            <p class="about-text">The model was trained on the MNIST dataset modified to have binary pixels to better match the input data. After the each of the pooling layers and after the first fully connected layer, a dropout of 40% was performed. The model was trained in 20 epochs with a learning rate of 0.0001 using the Adam optimizer and cross entropy loss function. The model achieves a validation accuracy of 94.6. The percent of digits accurately recognized through the program will likely be a bit lower because of the lower resolution used in the drawing board. </p>
+            <p class="about-text">This project was built using HTML 5, CSS 3, Javascript ES6 (with jQuery) on the frontend, and Node, Express, and Python (PyTorch) on the backend. The network is based on the LeNet5 architecture. <a href="https://github.com/CorboDiei/whatamiwriting">Click here for the Github repo.</a></p>
+            <p class="about-text">I made this project to get a handle on basic full-stack development, as well as implementation of machine learning. I will keep adding to this project as I learn more sophisticated concepts in the future. </p>
+        </div>
+        <div class="bottom-text">
+            <p class="name-text">David Corbo</p>
+        </div>
         <script src="builder.js"></script>
         <script src="submit.js"></script>
     </body>
