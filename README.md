@@ -12,7 +12,7 @@ Alternatively, you can clone this repository and try the app running locally by 
 node server.js
 ```
 
-You will then be able to access the server through your browser on [localhost:3000](localhost:3000)
+You will then be able to access the server through your browser on [localhost:3000](http://localhost:3000)
 
 ## Model architecture
 
