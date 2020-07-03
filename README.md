@@ -21,6 +21,7 @@ The network is based on the LeNet5 architecture. The model was trained on the MN
 ## What is it Written in?
 
 The frontend of the app is written in HTML, CSS, and JavaScript (with jQuery).
+
 The backend of the app is written in Node.js, Express.js, and Python (PyTorch).
 
 ## Future Steps?
