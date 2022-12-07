@@ -4,9 +4,9 @@
   "description": "An app that will guess what number users have drawn",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "child_process": "^1.0.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "nodemon": "^2.0.4",
     "path": "^0.12.7"
   },
